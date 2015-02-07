@@ -1,0 +1,33 @@
+package com.brisco.BridgeCalculatorPro.persistence;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import com.brisco.BridgeCalculatorPro.Rubber.Rubber;
+import com.brisco.Game.Contract;
+import com.brisco.Game.Direction;
+import com.brisco.Game.Suit;
+
+public class DBTest {
+	private Rubber _rubber;
+	private Rubber _deserializedRubber;
+
+	@Before
+	public void setUp() throws Exception {
+		_rubber = new Rubber();
+		_rubber.AddContract(new Contract(3, Suit.Hearts, true, false,
+				Direction.South, 10));
+		_rubber.AddContract(new Contract(5, Suit.Notrump, false, false,
+				Direction.East, 4));
+		_rubber.AddContract(new Contract(2, Suit.Clubs, true, true,
+				Direction.West, 8));
+		byte[] byteArray = DB.GetByteArrayFromTournamen(_rubber);
+		_deserializedRubber = (Rubber) DB
+				.GetCompetitionFromByteArray(byteArray);
+	}
+
+	@Test
+	public void Rubber_Is_The_Same_After_Ser_And_Deser() {
+
+	}
+}

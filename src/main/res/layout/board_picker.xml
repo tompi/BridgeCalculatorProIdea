@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" 
+	android:layout_width="fill_parent"
+	android:orientation="vertical">
+	<TextView 
+		android:id="@+id/boardpickerPlus"
+		style="@style/TextButton"
+		android:text="+"
+	/>
+	<TextView 
+		android:id="@+id/boardpickerNumber"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:textSize="25dip"
+        android:padding="3dip"
+        android:layout_margin="3dip"        
+        android:paddingTop="6dip"
+         android:paddingBottom="6dip"		
+		android:textStyle="bold"
+		android:gravity="center"
+		android:textColor="@color/white"
+		android:background="@drawable/vuln_ew"
+		android:text="15"
+	/>
+	<TextView 
+		android:id="@+id/boardpickerMinus"
+		style="@style/TextButton"
+		android:text="-"
+	/>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:gravity="center"
+		android:padding="3dip"
+		android:background="@color/googlegray">
+	
+	<Button
+		android:id="@+id/boardPickerOK"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="OK"/>
+	</LinearLayout>
+</LinearLayout>

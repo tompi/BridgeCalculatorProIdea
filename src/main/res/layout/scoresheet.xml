@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+>			
+	<ListView 
+		android:id="@+id/android:list" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"/>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:paddingLeft="3dip"
+		android:paddingRight="3dip"
+		android:paddingBottom="6dip"
+		android:paddingTop="0dip"
+		android:gravity="center">		
+		<LinearLayout android:id="@+id/scoresheetAdd" style="@style/TextButton">
+			<ImageView android:src="@android:drawable/ic_menu_add" style="@style/ButtonContent"/>
+			<TextView android:text="Add board"	style="@style/ButtonContent"/>
+		</LinearLayout> 		
+	</LinearLayout>	
+</LinearLayout>

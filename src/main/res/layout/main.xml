@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="3dip"
+		android:gravity="center">		
+		<TextView 
+			android:id="@+id/mainTitle"
+			style="@style/Text.AppHeader" 
+			android:text="@string/app_name"/>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:paddingLeft="3dip"
+		android:paddingRight="3dip"
+		android:paddingBottom="6dip"
+		android:paddingTop="0dip"
+		android:gravity="center">		
+		<LinearLayout 
+			android:id="@+id/newBtn" 
+			style="@style/TextButton">
+		<ImageView 
+			android:src="@android:drawable/ic_menu_add"
+			style="@style/ButtonContent"/>
+		<TextView
+			android:text="New" 
+			style="@style/ButtonContent"/>
+		
+		</LinearLayout>
+	</LinearLayout>	
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:paddingLeft="3dip"
+		android:paddingRight="3dip"
+		android:paddingBottom="6dip"
+		android:paddingTop="0dip"
+		android:visibility="gone"
+		android:id="@+id/newActions"
+		>
+		<LinearLayout android:id="@+id/newRubberBtn" style="@style/TextButton">
+			<ImageView android:src="@drawable/ic_menu_rubber" style="@style/ButtonContent"/>
+			<TextView android:text="Classic rubber"	style="@style/ButtonContent"/>
+		</LinearLayout> 		
+		<LinearLayout android:id="@+id/newChicagoBtn" style="@style/TextButton">
+			<ImageView android:src="@drawable/ic_menu_chicago" style="@style/ButtonContent"/>
+			<TextView android:text="Chicago / Four Deal"	style="@style/ButtonContent"/>
+		</LinearLayout> 		
+		<LinearLayout android:id="@+id/newRussianChicagoBtn" style="@style/TextButton">
+			<ImageView android:src="@drawable/ic_menu_russian" style="@style/ButtonContent"/>
+			<TextView android:text="Russian IMP Chicago / Four Deal"	style="@style/ButtonContent"/>
+		</LinearLayout> 		
+		    		<LinearLayout android:id="@+id/newPersonalScoreBtn" style="@style/TextButton">
+			<ImageView android:src="@drawable/ic_menu_scoresheet" style="@style/ButtonContent"/>
+			<TextView android:text="Personal Scoresheet"	style="@style/ButtonContent"/>
+		</LinearLayout> 		
+		<LinearLayout android:id="@+id/newTeamsBtn" style="@style/TextButton">
+			<ImageView android:src="@drawable/ic_menu_teams" style="@style/ButtonContent"/>
+			<TextView android:text="Teams match"	style="@style/ButtonContent"/>
+		</LinearLayout> 		
+	</LinearLayout>			
+	<ListView 
+		android:id="@+id/android:list" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+</LinearLayout>

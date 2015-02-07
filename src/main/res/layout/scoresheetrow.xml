@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent"
+	android:orientation="horizontal"
+	android:paddingRight="5dip"
+	android:paddingLeft="3dip"
+	android:paddingTop="3dip"
+	android:paddingBottom="3dip">
+	<TextView 
+		android:id="@+id/scoresheetBoardnr"
+		android:layout_weight="1"
+		android:gravity="center"
+		style="@style/Text"/>
+	<TextView 
+		android:id="@+id/scoresheetContract"
+		android:layout_weight="1"
+		android:gravity="center"
+		style="@style/Text"/>
+	<TextView 
+		android:id="@+id/scoresheetDeclarer"
+		android:layout_weight="1"
+		android:gravity="center"
+		style="@style/Text"/>
+	<TextView 
+		android:id="@+id/scoresheetLead"
+		android:layout_weight="1"
+		android:gravity="center"
+		style="@style/Text"/>
+	<TextView 
+		android:id="@+id/scoresheetResult"
+		android:layout_weight="1"
+		android:gravity="right"
+		style="@style/Text"/>
+	<TextView 
+		android:id="@+id/scoresheetScore"
+		android:layout_weight="1"
+		android:gravity="right"
+		style="@style/Text"/>
+</LinearLayout>

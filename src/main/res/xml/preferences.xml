@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+     <CheckBoxPreference
+             android:key="CharSpace"
+             android:title="@string/pref_spaceTitle"
+             android:summary="@string/pref_spaceSummary" />
+     <!-- <EditTextPreference
+                android:key="TextSize"
+                android:title="@string/pref_sizeTitle"
+                android:summary="@string/pref_sizeSummary"
+                android:dialogTitle="@string/pref_sizeDialogTitle" /> -->
+
+    <PreferenceCategory
+            android:title="@string/pref_symbolsCategory"
+            android:summary="@string/pref_symbolsCategorySummary">
+
+        <EditTextPreference
+                android:key="Ace"
+                android:title="@string/pref_aceTitle"
+                android:dialogTitle="@string/pref_aceTitle" />
+        <EditTextPreference
+                android:key="King"
+                android:title="@string/pref_kingTitle"
+                android:dialogTitle="@string/pref_kingTitle" />
+        <EditTextPreference
+                android:key="Queen"
+                android:title="@string/pref_queenTitle"
+                android:dialogTitle="@string/pref_queenTitle" />
+        <EditTextPreference
+                android:key="Jack"
+                android:title="@string/pref_jackTitle"
+                android:dialogTitle="@string/pref_jackTitle" />
+        <EditTextPreference
+                android:key="Ten"
+                android:title="@string/pref_tenTitle"
+                android:dialogTitle="@string/pref_tenTitle" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

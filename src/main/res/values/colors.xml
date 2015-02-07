@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="white">#E0E0E0</color>
+	<color name="black">#000000</color>
+	<color name="red">#CD2626</color>
+	<color name="green">#87AA14</color>
+	<color name="blue">#00A5DD</color>
+	<color name="brown1">#937D05</color>
+	<color name="brown2">#5E5003</color>
+	<color name="brown3">#413701</color>
+	<color name="focus">#ffc100</color>
+	<color name="grey">#cfcfca</color>
+	<color name="googlegray">#b1b1b1</color>
+	<color name="textbutton">#8cc373</color>
+	
+	<!-- Bidding -->
+	<color name="pass">#00923C</color>
+	<color name="passSelected">#00bb4d</color>
+	<color name="doubled">#bf0c08</color>
+	<color name="doubledSelected">#ff504c</color>
+	<color name="redoubled">#0e1a8a</color>
+	<color name="redoubledSelected">#1d1bff</color>
+	
+	<color name="spades">#071087</color>
+	<color name="spadesBackground">#c3cceb</color>
+	<color name="hearts">#d72b21</color>
+	<color name="heartsBackground">#ffe2e8</color>
+	<color name="diamonds">#ef6c1a</color>
+	<color name="diamondsBackground">#ffe5d0</color>
+	<color name="clubs">#28552a</color>
+	<color name="clubsBackground">#d4ded5</color>
+	<color name="notrump">#000000</color>
+	<color name="notrumpBackground">#cfcfca</color>
+	
+</resources>

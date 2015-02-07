@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:gravity="center">	  
+  <TableLayout
+	  	android:stretchColumns="*"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    style="@style/PaddedTable"	
+	  	android:id="@+id/dealTable">
+	  	<TableRow>
+	  		<LinearLayout style="@style/PaddedTableCell">
+			    <LinearLayout android:id="@+id/dealStatusCell" style="@style/DealLayout"/>
+			</LinearLayout>	  					  		
+	  		<LinearLayout style="@style/PaddedTableCell">
+			    <include layout="@layout/hand" android:id="@+id/dealNorthCell"/>
+			</LinearLayout>	  					  		
+	  		<LinearLayout style="@style/PaddedTableCell">
+			    <LinearLayout android:id="@+id/dealUpperRightCell" style="@style/DealLayout"/>
+			</LinearLayout>	  					  		
+	  	</TableRow>
+	  	<TableRow android:minHeight="70dip">
+	  		<LinearLayout style="@style/PaddedTableCell" android:gravity="center">
+			    <include layout="@layout/hand" android:id="@+id/dealWestCell"/>
+			</LinearLayout>	  					  		
+		    <com.brisco.BridgeCalculatorPro.Contract.VulnerabilityView 
+		    	android:id="@+id/dealVulnerability"
+		    	android:layout_height="fill_parent"
+		    	android:layout_width="fill_parent">
+		    </com.brisco.BridgeCalculatorPro.Contract.VulnerabilityView>
+	  		<LinearLayout style="@style/PaddedTableCell">
+			    <include layout="@layout/hand" android:id="@+id/dealEastCell"/>
+			</LinearLayout>	  					  		
+	  	</TableRow>
+	  	<TableRow>
+	  		<LinearLayout style="@style/PaddedTableCell">
+			    <LinearLayout android:id="@+id/dealLowerLeftCell" style="@style/DealLayout"/>
+			</LinearLayout>	  					  		
+	  		<LinearLayout style="@style/PaddedTableCell">
+			    <include layout="@layout/hand" android:id="@+id/dealSouthCell"/>
+			</LinearLayout>	  					  		
+	  		<LinearLayout style="@style/PaddedTableCell">
+			    <LinearLayout android:id="@+id/dealLowerRightCell" style="@style/DealLayout"/>
+			</LinearLayout>	  					  		
+	  	</TableRow>
+	  </TableLayout>
+  
+</LinearLayout>

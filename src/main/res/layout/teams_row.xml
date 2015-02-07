@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent"
+	android:orientation="horizontal"
+	android:paddingRight="5dip"
+	android:paddingLeft="3dip"
+	android:paddingTop="3dip"
+	android:paddingBottom="3dip">
+	<TextView 
+		android:id="@+id/teamsrowBoardnr"
+		android:layout_width="0px"
+		android:layout_weight="0.15"
+		android:layout_height="fill_parent"
+		android:textStyle="bold"
+		android:textSize="25sp"
+		android:gravity="center"
+	/>
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="0px" 
+		android:layout_weight="0.65"
+		android:gravity="center"
+		android:orientation="vertical">
+		<include layout="@layout/teams_row_room" android:id="@+id/teamsrowOpen"/>
+		<include layout="@layout/teams_row_room" android:id="@+id/teamsrowClosed"/>
+	</LinearLayout>
+	<TextView 
+		android:id="@+id/teamsrowIMPs"
+		android:layout_weight="0.2"
+		android:textStyle="bold"
+		android:textSize="25sp"
+		android:layout_height="fill_parent"
+		android:layout_width="0px"
+		android:gravity="center"/>
+</LinearLayout>

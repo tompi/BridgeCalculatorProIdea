@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bridge Calculator Pro</string>
+    <!-- "Open" symbols
+    <string name="symbol_clubs">&#9831;</string>
+    <string name="symbol_diamonds">&#9826;</string>
+    <string name="symbol_hearts">&#9825;</string>
+    <string name="symbol_spades">&#9828;</string>
+     -->
+    <string name="symbol_clubs">&#9827;</string>
+    <string name="symbol_diamonds">&#9830;</string>
+    <string name="symbol_hearts">&#9829;</string>
+    <string name="symbol_spades">&#9824;</string>
+    <string name="symbol_notrump">NT</string>
+    <string-array name="competitionListMenu">
+    	<item>Email as HTML-file</item>
+    	<item>Email as PBN-file</item>
+    	<item>Email as CSV-file(cards)</item>
+    	<item>Delete</item>
+    </string-array>
+    <string-array name="boardListMenu">
+    	<item>Delete</item>
+    </string-array>
+    
+    <string name="North">North</string>
+    <string name="South">South</string>
+    <string name="West">West</string>
+    <string name="East">East</string>
+    
+    <string name="shortNorth">N</string>
+    <string name="shortSouth">S</string>
+    <string name="shortWest">W</string>
+    <string name="shortEast">E</string>
+    
+    <string name="ace">A</string>
+    <string name="king">K</string>
+    <string name="queen">Q</string>
+    <string name="jack">J</string>
+    <string name="ten">T</string>
+    <string name="unknowncard">\?</string>
+    <string name="small">x</string>
+    
+    <string name="bidSpades">S</string>
+    <string name="bidHearts">H</string>
+    <string name="bidDiamonds">D</string>
+    <string name="bidClubs">C</string>
+    <string name="bidNotrump">NT</string>
+    <string name="bidPass">pass</string>
+    <string name="bidDouble">X</string>
+    <string name="bidRedouble">XX</string>
+    
+    <string name="OK">OK</string>
+    <string name="delete">&#8592;</string>
+    
+    <string name="exit">Exit</string>
+    <string name="about">About</string>
+    <string name="help">Online documentation</string>
+    <string name="settings">Settings</string>
+    
+    <string name="aboutAuthor">by Thomas Haukland</string>
+    <string name="aboutSummary">The ambition of the application is to make use of your android phone while playing bridge. Features are added by request or at the whim of the author. Feedback is much appreciated, please drop a note to support@bridgecalculator.com if you have any comments!</string>
+    
+    <string name="pref_spaceTitle">Spacing</string>
+    <string name="pref_spaceSummary">Check for space between card-symbols</string>
+    <string name="pref_sizeTitle">Text-size</string>
+    <string name="pref_sizeSummary">Override default text-size</string>
+    <string name="pref_sizeDialogTitle">Text-size:</string>
+    <string name="pref_symbolsCategory">Card-symbols</string>
+    <string name="pref_symbolsCategorySummary">Override default symbols for honors in diagrams</string>
+    <string name="pref_aceTitle">Ace</string>
+    <string name="pref_kingTitle">King</string>
+    <string name="pref_queenTitle">Queen</string>
+    <string name="pref_jackTitle">Jack</string>
+    <string name="pref_tenTitle">Ten</string>
+    
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:padding="2dip"
+>
+  <ScrollView 
+  	android:layout_width="fill_parent" 
+  	android:layout_height="fill_parent"
+  	android:layout_weight="1"
+  	android:gravity="center_horizontal"
+  	android:orientation="vertical">
+  <TableLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    style="@style/PaddedTable"	
+	  	android:id="@+id/auctionTable">
+	<TableRow>
+		<LinearLayout style="@style/PaddedTableCell.AuctionHeader">
+			<LinearLayout style="@style/DealLayout">
+				<TextView android:text="@string/West" style="@style/AuctionHeader"></TextView>
+			</LinearLayout>
+		</LinearLayout>	  					  		
+		<LinearLayout style="@style/PaddedTableCell.AuctionHeader">
+			<LinearLayout style="@style/DealLayout">
+				<TextView android:text="@string/North" style="@style/AuctionHeader"></TextView>
+			</LinearLayout>
+		</LinearLayout>	  					  		
+		<LinearLayout style="@style/PaddedTableCell.AuctionHeader">
+			<LinearLayout style="@style/DealLayout">
+				<TextView android:text="@string/East" style="@style/AuctionHeader"></TextView>
+			</LinearLayout>
+		</LinearLayout>	  					  		
+		<LinearLayout style="@style/PaddedTableCell.AuctionHeader">
+			<LinearLayout style="@style/DealLayout">
+				<TextView android:text="@string/South" style="@style/AuctionHeader"></TextView>
+			</LinearLayout>
+		</LinearLayout>	  					  		
+	</TableRow>
+	  	
+  </TableLayout>
+  </ScrollView>
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+android:layout_weight="1"
+>
+	<!-- Level -->
+	<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_weight="1"
+	android:orientation="horizontal"
+	android:gravity="center">
+		<Button
+			android:id="@+id/ContractLevel1"
+			style="@style/TextButton.Level"
+			android:text="1"/>
+		<Button
+			android:id="@+id/ContractLevel2"
+			style="@style/TextButton.Level"
+			android:text="2"/>
+		<Button
+			android:id="@+id/ContractLevel3"
+			style="@style/TextButton.Level"			
+			android:text="3"/>
+		<Button
+			android:id="@+id/ContractLevel4"
+			style="@style/TextButton.Level"
+			android:text="4"/>
+	</LinearLayout>		
+	<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_weight="1"
+	android:orientation="horizontal"
+	android:gravity="center">
+		<Button
+			android:id="@+id/ContractLevel5"
+			style="@style/TextButton.Level"
+			android:text="5"/>
+		<Button
+			android:id="@+id/ContractLevel6"
+			style="@style/TextButton.Level"
+			
+			android:text="6"/>
+		<Button
+			android:id="@+id/ContractLevel7"
+			style="@style/TextButton.Level"
+			android:text="7"/>
+		<Button
+			android:id="@+id/ContractLevelPass"
+			style="@style/TextButton.Pass"
+			android:text="Pass"/>
+	</LinearLayout>		
+
+	<!-- Suit X XX PlayedBy -->
+	<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_weight="1"
+	android:orientation="horizontal"
+	android:paddingTop="3dip"
+	android:gravity="center">
+		<Button
+			android:id="@+id/ContractSuitClubs"
+			style="@style/TextButton.Clubs"
+			android:text="@string/symbol_clubs"/>
+		<Button
+			android:id="@+id/ContractSuitDiamonds"
+			style="@style/TextButton.Diamonds"
+			android:text="@string/symbol_diamonds"/>
+		<Button
+			android:id="@+id/ContractSuitHearts"
+			style="@style/TextButton.Hearts"
+			android:text="@string/symbol_hearts"/>
+		<Button
+			android:id="@+id/ContractSuitSpades"
+			style="@style/TextButton.Spades"
+			android:text="@string/symbol_spades"/>
+	</LinearLayout>		
+	<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_weight="1"
+	android:orientation="horizontal"
+	android:gravity="center">
+		<Button
+			android:id="@+id/ContractSuitNT"
+			style="@style/TextButton.NoTrump"
+			android:text="@string/symbol_notrump"/>
+		<ToggleButton
+			android:id="@+id/ContractDoubled"
+			style="@style/TextButton.Doubled"
+			android:textOn="X"
+			android:textOff="X"/>
+		<ToggleButton
+			android:id="@+id/ContractReDoubled"
+			style="@style/TextButton.Redoubled"
+			android:textOn="XX"
+			android:textOff="XX"/>
+		<ToggleButton
+			android:id="@+id/ContractPlayedBy"
+			style="@style/TextButton"
+			android:visibility="invisible"/>
+	</LinearLayout>		
+
+	<!-- Status -->
+	<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="horizontal"
+	android:layout_weight="1"
+	android:gravity="center"
+	>
+		    <com.brisco.BridgeCalculatorPro.Contract.VulnerabilityView 
+		    	android:id="@+id/auctionVulnerability"
+		    	android:layout_height="fill_parent"
+		    	android:layout_width="fill_parent"
+		    	android:layout_weight="1"
+		    	/>
+	
+		<TextView android:id="@+id/contractLabel" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:text="" 
+		android:textSize="15sp"
+		android:textStyle="bold" 
+		android:gravity="center"
+		android:layout_weight="1"/>
+		<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="horizontal"
+		android:layout_weight="1"
+		android:gravity="center"
+		android:padding="3dip">
+					<LinearLayout android:id="@+id/contractDeleteBtn" style="@style/TextButton">
+						<ImageView android:src="@android:drawable/ic_menu_revert" style="@style/ButtonContent"/>
+						<TextView android:text=""	style="@style/ButtonContent"/>
+					</LinearLayout> 		
+					<LinearLayout android:id="@+id/auctionOKBtn" style="@style/TextButton">
+						<ImageView android:src="@android:drawable/ic_menu_save" style="@style/ButtonContent"/>
+						<TextView android:text=""	style="@style/ButtonContent"/>
+					</LinearLayout> 		
+		
+		</LinearLayout>
+	</LinearLayout>
+	
+</LinearLayout>
+
+</LinearLayout>

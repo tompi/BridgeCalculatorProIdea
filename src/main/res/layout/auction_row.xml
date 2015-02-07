@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout style="@style/PaddedTableCell.Auction">
+		<LinearLayout android:id="@+id/auctionWestCell" style="@style/DealLayout"/>
+	</LinearLayout>	  					  		
+	<LinearLayout style="@style/PaddedTableCell.Auction">
+		<LinearLayout android:id="@+id/auctionNorthCell" style="@style/DealLayout"/>
+	</LinearLayout>	  					  		
+	<LinearLayout style="@style/PaddedTableCell.Auction">
+		<LinearLayout android:id="@+id/auctionEastCell" style="@style/DealLayout"/>
+	</LinearLayout>	  					  		
+	<LinearLayout style="@style/PaddedTableCell.Auction">
+		<LinearLayout android:id="@+id/auctionSouthCell" style="@style/DealLayout"/>
+	</LinearLayout>	  					  		
+</TableRow>

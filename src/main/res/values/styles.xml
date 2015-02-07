@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<style name="ButtonContent">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+       	<item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>	
+        <item name="android:textColor">@color/black</item>
+	</style>
+	<!--  Text -->
+	<style name="Text">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+	</style>
+	<style name="Text.Header">
+        <item name="android:textSize">25sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+	</style>	
+	<style name="Text.DoubleLine">
+        <item name="android:textSize">25sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:paddingLeft">2dip</item>
+        <item name="android:paddingRight">2dip</item>
+	</style>	
+	<style name="Text.Right">
+		<item name="android:gravity">right</item>
+        <item name="android:paddingRight">6dip</item>        
+	</style>
+	<style name="Text.Right.Bold">
+		<item name="android:textStyle">bold</item>
+	</style>
+	<style name="Text.AppHeader">
+        <item name="android:background">@color/blue</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">3dip</item>
+        <item name="android:padding">6dip</item>        
+	</style>
+
+	<!-- Padding -->
+	<style name="PaddedTableCell">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:width">0dip</item>
+        <item name="android:paddingLeft">4dip</item>
+        <item name="android:paddingRight">0dip</item>
+        <item name="android:paddingTop">4dip</item>
+        <item name="android:paddingBottom">0dip</item>
+    </style>
+	<style name="PaddedTable">
+		<item name="android:textColor">#FFFFFF</item>                			
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingRight">4dip</item>
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:paddingBottom">4dip</item>                
+    </style>
+	<style name="PaddedTableCell.AuctionHeader">
+        <item name="android:padding">0.5dip</item>
+    </style>
+	<style name="PaddedTableCell.Auction">
+        <item name="android:padding">0dip</item>
+    </style>
+	<style name="AuctionHeader">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">25sp</item>
+        </style>
+    
+    
+	<!--  Layouts -->
+	<style name="DealLayout">
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+	<style name="DealLayout.Direction">
+        <item name="android:background">@drawable/selectable_layout</item>
+        <item name="android:focusable">true</item>
+	</style>
+	<style name="Score">
+        <item name="android:gravity">right</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>                
+        <item name="android:paddingRight">6dip</item>
+        <item name="android:paddingLeft">6dip</item>                
+	</style>
+	<style name="Score.Above">
+        <item name="android:background">@color/blue</item>
+	</style>
+	<style name="Score.Below1">
+        <item name="android:background">@color/brown1</item>
+	</style>
+	<style name="Score.Below2">
+        <item name="android:background">@color/brown2</item>
+	</style>
+	<style name="Score.Below3">
+        <item name="android:background">@color/brown3</item>
+	</style>
+	<style name="StatusHeader">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item> 
+        <item name="android:gravity">center</item>               
+	</style>
+
+	<style name="TextButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>    
+        <item name="android:layout_margin">3dip</item>
+        <!-- <item name="android:paddingLeft">3dip</item> -->
+        <item name="android:padding">3dip</item>
+        <item name="android:paddingTop">6dip</item>
+        <item name="android:paddingBottom">6dip</item>
+		<item name="android:background">@drawable/custom_button</item>
+		<item name="android:textColor">@color/black</item>
+	</style>
+	
+	<style name="TextButton.Level">
+	</style>
+	<style name="TextButton.Vulnerability">
+		<item name="android:textColor">@color/white</item>
+	</style>
+	<style name="TextButton.Pass">
+		<item name="android:background">@drawable/pass_button</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+	<style name="TextButton.Clubs">
+		<item name="android:background">@drawable/clubs_button</item>
+		<item name="android:textColor">@color/clubs</item>
+	</style>
+	<style name="TextButton.Diamonds">
+		<item name="android:background">@drawable/diamonds_button</item>
+		<item name="android:textColor">@color/diamonds</item>
+	</style>
+	<style name="TextButton.Hearts">
+		<item name="android:background">@drawable/hearts_button</item>
+		<item name="android:textColor">@color/hearts</item>
+	</style>
+	<style name="TextButton.Spades">
+		<item name="android:background">@drawable/spades_button</item>
+		<item name="android:textColor">@color/spades</item>
+	</style>
+	<style name="TextButton.NoTrump">
+		<item name="android:background">@drawable/notrump_button</item>
+		<item name="android:textColor">@color/notrump</item>
+	</style>
+	<style name="TextButton.Doubled">
+		<item name="android:background">@drawable/doubled_button</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+	<style name="TextButton.Redoubled">
+		<item name="android:background">@drawable/redoubled_button</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+	<style name="TextButton.Vulnerable">
+		<item name="android:background">@drawable/vulnerable_button</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+	<style name="TextButton.Denomination">
+		<item name="android:background">@drawable/denomination_togglebutton</item>
+		<item name="android:textColor">@color/black</item>
+	</style>
+	
+	<style name="fillParent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>	
+        <item name="android:layout_weight">1</item>        
+	</style>
+	<style name="AuctionContainer">
+        <!--  <item name="android:background">@drawable/border</item> -->
+        <item name="android:padding">4dip</item>
+	</style>
+	
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:padding="5dip"
+>
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+>
+	<LinearLayout
+		android:id="@+id/teamsBoardRow1"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:orientation="horizontal"
+		android:gravity="center">
+		<Button
+			android:id="@+id/teamsBoardNumberBtn"
+			android:textSize="25sp"
+			style="@style/TextButton.Vulnerability" />
+	<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_weight="1"
+	android:orientation="vertical"
+	android:gravity="center">	
+		<TextView android:id="@+id/teamsBoardDealerLbl" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:text="Dealer:" 
+		android:textSize="10sp"
+		android:gravity="center"
+		android:layout_weight="1"/>
+		<TextView android:id="@+id/teamsBoardDealer" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:textSize="20sp"
+		android:textStyle="bold" 
+		android:gravity="center"
+		android:layout_weight="1"/>
+	</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_weight="1"
+	android:orientation="horizontal"
+	android:gravity="center">
+			<include android:id="@+id/teamsBoardOpenRoom" layout="@layout/teams_board_room"/>
+			<LinearLayout android:id="@+id/teamsBoardOpenDeleteBtn" style="@style/TextButton" android:layout_weight="4">
+				<ImageView android:src="@android:drawable/ic_menu_delete" style="@style/ButtonContent"/>
+			</LinearLayout> 					
+	</LinearLayout>		
+	<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_weight="1"
+	android:orientation="horizontal"
+	android:gravity="center">	
+			<include	android:id="@+id/teamsBoardClosedRoom" layout="@layout/teams_board_room"/>
+			<LinearLayout android:id="@+id/teamsBoardClosedDeleteBtn" style="@style/TextButton" android:layout_weight="4">
+				<ImageView android:src="@android:drawable/ic_menu_delete" style="@style/ButtonContent"/>
+			</LinearLayout> 					
+	</LinearLayout>		
+
+	<LinearLayout
+		android:id="@+id/teamsBoardRow2"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:orientation="horizontal"
+		android:gravity="center">
+		<TextView android:id="@+id/teamsIMP" 
+		android:layout_width="0dp" 
+		android:layout_height="fill_parent" 
+		android:textSize="35sp"
+		android:textStyle="bold" 
+		android:gravity="center"
+		android:layout_weight="1"/>
+	</LinearLayout>
+
+	<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_weight="1"
+	android:orientation="horizontal"
+	android:paddingTop="6dip"
+	android:gravity="center">
+		<LinearLayout android:id="@+id/teamsBoardSwapBtn" style="@style/TextButton">
+			<ImageView android:src="@android:drawable/ic_menu_rotate" style="@style/ButtonContent"/>
+			<TextView android:text="Swap"	style="@style/ButtonContent"/>
+		</LinearLayout> 		
+		<LinearLayout android:id="@+id/teamsBoardOKBtn" style="@style/TextButton">
+			<ImageView android:src="@android:drawable/ic_menu_save" style="@style/ButtonContent"/>
+			<TextView android:text="Save"	style="@style/ButtonContent"/>
+		</LinearLayout> 		
+	<!-- 
+		<Button
+			android:id="@+id/teamsBoardPrevBtn"
+			style="@style/TextButton"
+			android:text="&#8592;"/>
+		<Button
+			android:id="@+id/teamsBoardNextBtn"
+			style="@style/TextButton"
+			android:text="&#8594;"/>
+			-->
+	</LinearLayout>		
+</LinearLayout>
+
+</LinearLayout>

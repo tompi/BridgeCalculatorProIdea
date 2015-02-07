@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_weight="1"
+android:orientation="vertical">
+
+	<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_weight="1"
+	android:orientation="horizontal"
+	android:paddingTop="6dip"
+	android:gravity="center">
+		<Button
+			android:id="@+id/dealSuitSpades"
+			style="@style/TextButton.Spades"
+			android:text="@string/symbol_spades"/>
+		<Button
+			android:id="@+id/dealSuitHearts"
+			style="@style/TextButton.Hearts"
+			android:text="@string/symbol_hearts"/>
+		<Button
+			android:id="@+id/dealSuitDiamonds"
+			style="@style/TextButton.Diamonds"
+			android:text="@string/symbol_diamonds"/>
+		<Button
+			android:id="@+id/dealSuitClubs"
+			style="@style/TextButton.Clubs"
+			android:text="@string/symbol_clubs"/>
+	</LinearLayout>		
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:gravity="center">
+		<ToggleButton
+			android:id="@+id/dealAce"
+			style="@style/TextButton.Denomination"
+			android:textOn="A"
+			android:textOff="A"/>
+		<ToggleButton
+			android:id="@+id/dealKing"
+			style="@style/TextButton.Denomination"
+			android:textOn="K"
+			android:textOff="K"/>
+		<ToggleButton
+			android:id="@+id/dealQueen"
+			style="@style/TextButton.Denomination"
+			android:textOn="Q"
+			android:textOff="Q"/>
+		<ToggleButton
+			android:id="@+id/dealJack"
+			style="@style/TextButton.Denomination"
+			android:textOn="J"
+			android:textOff="J"/>
+		<ToggleButton
+			android:id="@+id/dealTen"
+			style="@style/TextButton.Denomination"
+			android:textOn="T"
+			android:textOff="T"/>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:gravity="center">
+		<ToggleButton
+			android:id="@+id/dealNine"
+			style="@style/TextButton.Denomination"
+			android:textOn="9"
+			android:textOff="9"/>
+		<ToggleButton
+			android:id="@+id/dealEight"
+			style="@style/TextButton.Denomination"
+			android:textOn="8"
+			android:textOff="8"/>
+		<ToggleButton
+			android:id="@+id/dealSeven"
+			style="@style/TextButton.Denomination"
+			android:textOn="7"
+			android:textOff="7"/>
+		<ToggleButton
+			android:id="@+id/dealSix"
+			style="@style/TextButton.Denomination"
+			android:textOn="6"
+			android:textOff="6"/>
+		<ToggleButton
+			android:id="@+id/dealFive"
+			style="@style/TextButton.Denomination"
+			android:textOn="5"
+			android:textOff="5"/>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:gravity="center">
+		<ToggleButton
+			android:id="@+id/dealFour"
+			style="@style/TextButton.Denomination"
+			android:textOn="4"
+			android:textOff="4"/>
+		<ToggleButton
+			android:id="@+id/dealThree"
+			style="@style/TextButton.Denomination"
+			android:textOn="3"
+			android:textOff="3"/>
+		<ToggleButton
+			android:id="@+id/dealTwo"
+			style="@style/TextButton.Denomination"
+			android:textOn="2"
+			android:textOff="2"/>
+		<ToggleButton
+			style="@style/TextButton"
+			android:visibility="invisible"/>
+		<LinearLayout android:id="@+id/cardInputOKBtn" style="@style/TextButton">
+			<TextView android:text="OK"	style="@style/ButtonContent"/>
+		</LinearLayout> 		
+	</LinearLayout>
+	
+</LinearLayout>
+

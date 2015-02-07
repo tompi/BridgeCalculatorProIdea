@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:padding="5dip"
+>
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+>
+	<!-- Custom header -->
+	<LinearLayout
+		android:id="@+id/contractCustomButtons"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:orientation="horizontal"
+		android:gravity="center">
+		<com.brisco.BridgeCalculatorPro.Contract.VulnerabilityView
+	    	android:id="@+id/contractVulnerability"
+	    	android:layout_height="fill_parent"
+	    	android:layout_width="fill_parent"
+			android:layout_weight="1"/>
+		<Button
+			android:id="@+id/ContractAuction"
+			style="@style/TextButton.Level"
+			android:text="Auction"/>
+		<Button
+			android:id="@+id/ContractCards"
+			style="@style/TextButton.Level"
+			android:text="Cards"/>
+		<Button
+			android:id="@+id/ContractLead"
+			style="@style/TextButton.Level"
+			android:text="Lead"/>
+	</LinearLayout>
+	<!-- Level -->
+	<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_weight="1"
+	android:orientation="horizontal"
+	android:gravity="center">
+		<Button
+			android:id="@+id/ContractLevel1"
+			style="@style/TextButton.Level"
+			android:text="1"/>
+		<Button
+			android:id="@+id/ContractLevel2"
+			style="@style/TextButton.Level"
+			android:text="2"/>
+		<Button
+			android:id="@+id/ContractLevel3"
+			style="@style/TextButton.Level"			
+			android:text="3"/>
+		<Button
+			android:id="@+id/ContractLevel4"
+			style="@style/TextButton.Level"
+			android:text="4"/>
+	</LinearLayout>		
+	<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_weight="1"
+	android:orientation="horizontal"
+	android:gravity="center">
+		<Button
+			android:id="@+id/ContractLevel5"
+			style="@style/TextButton.Level"
+			android:text="5"/>
+		<Button
+			android:id="@+id/ContractLevel6"
+			style="@style/TextButton.Level"
+			
+			android:text="6"/>
+		<Button
+			android:id="@+id/ContractLevel7"
+			style="@style/TextButton.Level"
+			android:text="7"/>
+		<Button
+			android:id="@+id/ContractLevelPass"
+			style="@style/TextButton.Pass"
+			android:text="Pass"/>
+	</LinearLayout>		
+
+	<!-- Suit X XX PlayedBy -->
+	<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_weight="1"
+	android:orientation="horizontal"
+	android:paddingTop="6dip"
+	android:gravity="center">
+		<Button
+			android:id="@+id/ContractSuitClubs"
+			style="@style/TextButton.Clubs"
+			android:text="@string/symbol_clubs"/>
+		<Button
+			android:id="@+id/ContractSuitDiamonds"
+			style="@style/TextButton.Diamonds"
+			android:text="@string/symbol_diamonds"/>
+		<Button
+			android:id="@+id/ContractSuitHearts"
+			style="@style/TextButton.Hearts"
+			android:text="@string/symbol_hearts"/>
+		<Button
+			android:id="@+id/ContractSuitSpades"
+			style="@style/TextButton.Spades"
+			android:text="@string/symbol_spades"/>
+	</LinearLayout>		
+	<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_weight="1"
+	android:orientation="horizontal"
+	android:gravity="center">
+		<Button
+			android:id="@+id/ContractSuitNT"
+			style="@style/TextButton.NoTrump"
+			android:text="@string/symbol_notrump"/>
+		<ToggleButton
+			android:id="@+id/ContractDoubled"
+			style="@style/TextButton.Doubled"
+			android:textOn="X"
+			android:textOff="X"/>
+		<ToggleButton
+			android:id="@+id/ContractReDoubled"
+			style="@style/TextButton.Redoubled"
+			android:textOn="XX"
+			android:textOff="XX"/>
+		<ToggleButton
+			android:id="@+id/ContractPlayedBy"
+			style="@style/TextButton"
+			android:textOn="Us"
+			android:textOff="They"
+			android:checked="true"/>
+		<Button
+			android:id="@+id/ContractBoardNumber"
+			style="@style/TextButton.Vulnerability"
+			android:visibility="gone"/>
+	</LinearLayout>		
+	<LinearLayout
+		android:orientation="horizontal"
+		android:id="@+id/contractDeclarerLayout"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:gravity="center">
+		<Button
+			android:id="@+id/ContractDeclarerWest"
+			style="@style/TextButton"
+			android:text="@string/shortWest"/>
+		<Button
+			android:id="@+id/ContractDeclarerNorth"
+			style="@style/TextButton"
+			android:text="@string/shortNorth"/>
+		<Button
+			android:id="@+id/ContractDeclarerEast"
+			style="@style/TextButton"
+			android:text="@string/shortEast"/>
+		<Button
+			android:id="@+id/ContractDeclarerSouth"
+			style="@style/TextButton"
+			android:text="@string/shortSouth"/>
+	</LinearLayout>
+	<!-- Tricks -->	
+		<LinearLayout
+		android:orientation="horizontal"
+		android:id="@+id/contractTricksLinearLayout"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:paddingTop="6dip"
+		android:gravity="center">
+			<Button android:id="@+id/contractMinusTrick"
+				style="@style/TextButton"
+				android:text="-"/> 
+			<TextView android:id="@+id/TricksLabel" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:gravity="center" 
+				android:textStyle="bold"
+				android:textSize="15sp"
+				android:text="Tricks: 8"
+				android:layout_weight="1"/>
+			<Button android:id="@+id/contractPlusTrick"
+				style="@style/TextButton"
+				android:text="+"/> 
+		</LinearLayout>
+		<SeekBar
+		android:id="@+id/TricksSeekBar"
+		android:max="13"
+		android:progress="8"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="3dip"
+		android:paddingRight="3dip"
+		>
+		</SeekBar>
+		
+	<!-- Russian IMP: HCP -->	
+		<LinearLayout
+		android:orientation="horizontal"
+		android:id="@+id/contractHCPLinearLayout"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:paddingTop="6dip"
+		android:gravity="center"
+		android:visibility="gone">
+			<Button android:id="@+id/contractMinusHCP"
+				style="@style/TextButton"
+				android:text="-"/> 
+			<TextView android:id="@+id/HCPLabel" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:gravity="center" 
+				android:textStyle="bold"
+				android:textSize="15sp"
+				android:text="HCP: 20"
+				android:layout_weight="1"/>
+			<Button android:id="@+id/contractPlusHCP"
+				style="@style/TextButton"
+				android:text="+"/> 
+		</LinearLayout>
+		<SeekBar
+		android:id="@+id/HCPSeekBar"
+		android:max="40"
+		android:progress="20"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="3dip"
+		android:paddingRight="3dip"
+		android:visibility="gone"
+		>
+		</SeekBar>
+		    
+	<!-- Status -->
+	<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="horizontal"
+	android:layout_weight="1"
+	android:gravity="center"
+	android:padding="3dip"
+	>
+		<LinearLayout 
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="3dip"		    
+		    >
+			<TextView android:id="@+id/contractRussianLabel" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:text="" 
+			android:textSize="10sp"
+			android:gravity="center"
+			android:layout_weight="1"/>
+		    <TextView android:id="@+id/contractLabel" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:text="" 
+			android:textSize="15sp"
+			android:textStyle="bold" 
+			android:gravity="center"
+			android:layout_weight="1"/>
+		</LinearLayout>
+		<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="horizontal"
+		android:layout_weight="1"
+		android:gravity="center"
+		android:padding="3dip">
+					<LinearLayout android:id="@+id/contractDeleteBtn" android:visibility="gone" style="@style/TextButton">
+						<ImageView android:src="@android:drawable/ic_menu_delete" style="@style/ButtonContent"/>
+						<TextView android:text="@string/delete"	style="@style/ButtonContent"/>
+					</LinearLayout> 		
+					<LinearLayout android:id="@+id/contractOKBtn" style="@style/TextButton">
+						<ImageView android:src="@android:drawable/ic_menu_save" style="@style/ButtonContent"/>
+						<TextView android:text="OK"	style="@style/ButtonContent"/>
+					</LinearLayout> 		
+		</LinearLayout>
+	</LinearLayout>
+	
+</LinearLayout>
+
+</LinearLayout>

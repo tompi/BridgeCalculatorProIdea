@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  android:id="@+id/rubberMainView"
+  >  
+  
+  	<!-- HEADER -->
+	<LinearLayout
+	  android:id="@+id/rubberHeaderPane"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="horizontal">	  
+	</LinearLayout>
+	
+	<!-- RUBBER -->
+	<ScrollView
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent"
+	  android:orientation="vertical"
+	  android:gravity="center"
+	  android:layout_weight="1"
+	>
+	<LinearLayout
+	  android:id="@+id/rubberTablePane"
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent"
+	  android:orientation="vertical"
+	  android:gravity="center"
+	  android:layout_weight="1"
+	  >
+	  <TableLayout
+	  	android:gravity="center_horizontal"
+	  	android:stretchColumns="0,1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"	
+	    style="@style/PaddedTable" 	     
+	  	android:id="@+id/rubberTable">
+	  	<TableRow
+	  		android:id="@+id/rubberStatusRow">
+	  		<LinearLayout style="@style/PaddedTableCell">
+			    <LinearLayout
+			    	android:id="@+id/rubberStatusWe"
+			    	style="@style/StatusHeader"
+			    	>
+		  			<TextView	  		
+		  				android:id="@+id/rubberStatusWeLabel"		
+					    style="@style/Text.Header"
+		  				android:text="We"/>
+		  			<TextView
+		  				android:id="@+id/rubberStatusLegWe"
+		  				style="@style/Text.Right"/>
+		  			<TextView
+		  				android:id="@+id/rubberStatusScoreWe"
+		  				style="@style/Text.Right.Bold"/>
+	  			</LinearLayout>	  				
+			</LinearLayout>	  					  		
+	  		<LinearLayout style="@style/PaddedTableCell">
+			    <LinearLayout
+			    	android:id="@+id/rubberStatusThem"
+			    	style="@style/StatusHeader"
+			    	>
+	  			<TextView
+	  				android:id="@+id/rubberStatusThemLabel"	  
+				    style="@style/Text.Header"
+	  				android:text="They"/>	  
+		  			<TextView
+		  				android:id="@+id/rubberStatusLegThem"
+		  				style="@style/Text.Right"/>
+	  			<TextView
+	  				android:id="@+id/rubberStatusScoreThem"
+	  				style="@style/Text.Right.Bold"/>	  							
+	  			</LinearLayout>	  				
+			</LinearLayout>		  					
+	  	</TableRow>
+	  	<TableRow
+	  		android:id="@+id/rubberAboveLineRow">	 
+	  		<LinearLayout
+	  			style="@style/PaddedTableCell">
+	  		<LinearLayout
+	  			style="@style/Score.Above"
+	  			android:id="@+id/rubberAboveLineWe"/>		
+  			</LinearLayout>
+	  		<LinearLayout
+	  			style="@style/PaddedTableCell">			  			 
+	  		<LinearLayout
+	  			android:id="@+id/rubberAboveLineThem"
+	  			style="@style/Score.Above"/>		
+  			</LinearLayout>
+	  	</TableRow>
+	  	<TableRow
+	  		android:id="@+id/rubberBelowLineRow1">	  		
+	  		<LinearLayout
+	  			style="@style/PaddedTableCell">
+	  		<LinearLayout
+	  			style="@style/Score.Below1"
+	  			android:id="@+id/rubberBelowLine1We"/>		
+  			</LinearLayout>
+	  		<LinearLayout
+	  			style="@style/PaddedTableCell">
+	  		<LinearLayout
+	  			style="@style/Score.Below1"
+	  			android:id="@+id/rubberBelowLine1Them"/>
+  			</LinearLayout>
+	  	</TableRow>
+	  	<TableRow
+	  		android:id="@+id/rubberBelowLineRow2">	  		
+	  		<LinearLayout
+	  			style="@style/PaddedTableCell">
+	  		<LinearLayout
+	  			style="@style/Score.Below2"
+	  			android:id="@+id/rubberBelowLine2We"/>
+  			</LinearLayout>
+	  		<LinearLayout
+	  			style="@style/PaddedTableCell">
+	  		<LinearLayout
+	  			style="@style/Score.Below2"
+	  			android:id="@+id/rubberBelowLine2Them"/>
+  			</LinearLayout>
+	  	</TableRow>
+	  	<TableRow
+	  		android:id="@+id/rubberBelowLineRow3">	  		
+	  		<LinearLayout
+	  			style="@style/PaddedTableCell">
+	  		<LinearLayout
+	  			style="@style/Score.Below3"
+	  			android:id="@+id/rubberBelowLine3We"/>
+  			</LinearLayout>
+	  		<LinearLayout
+	  			style="@style/PaddedTableCell">
+	  		<LinearLayout
+	  			style="@style/Score.Below3"
+	  			android:id="@+id/rubberBelowLine3Them"/>
+  			</LinearLayout>
+	  	</TableRow>	  	
+	  </TableLayout>
+	</LinearLayout>
+	</ScrollView>
+	<!-- ACTION -->
+	<LinearLayout
+	  android:id="@+id/rubberActionPane"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:padding="4dip"
+	  android:orientation="horizontal">
+	  <!-- <TextView
+	  	android:id="@+id/rubberContractsPlayed"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:layout_weight="1"/>-->
+					<LinearLayout android:id="@+id/rubberRemoveContract" style="@style/TextButton">
+						<ImageView android:src="@android:drawable/ic_menu_delete" style="@style/ButtonContent"/>
+						<TextView android:text=""	style="@style/ButtonContent"/>
+					</LinearLayout> 		
+					<LinearLayout android:id="@+id/rubberAddContract" style="@style/TextButton">
+						<ImageView android:src="@android:drawable/ic_menu_add" style="@style/ButtonContent"/>
+						<TextView android:text=""	style="@style/ButtonContent"/>
+					</LinearLayout> 		
+	</LinearLayout>  
+</LinearLayout>
